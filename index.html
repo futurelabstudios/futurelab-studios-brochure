@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futurelab Studios | AI Workshops and AI Tool Building</title>
+  <meta
+    name="description"
+    content="Futurelab Studios is an AI-enabled organization incubated at NSRCEL, IIM Bangalore, 2026 batch. We work with organizations on AI workshops and AI tool building."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="icon" href="https://futurelabstudios.com/images/FLlogo2.png" type="image/png">
+  <link rel="stylesheet" href="styles.css?v=20260402f">
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Futurelab Studios home">
+      <img src="https://futurelabstudios.com/images/FLlogo2.png" alt="Futurelab Studios logo">
+      <span>Futurelab Studios</span>
+    </a>
+
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="site-nav"
+      aria-label="Toggle navigation"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav">
+      <a href="#gallery">Photos</a>
+      <a href="#clients">Organizations</a>
+      <a href="#strengths">Workshops</a>
+      <a href="#videos">Videos</a>
+      <a href="#facilitators">Facilitators</a>
+      <a href="#tools">Tools Built</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Futurelab Studios</p>
+          <h1>
+            AI workshops and
+            <span>AI tool building</span>
+            for organizations.
+          </h1>
+          <p class="hero-intro">
+            Futurelab Studios is an AI-enabled organization incubated at NSRCEL,
+            IIM Bangalore, 2026 batch. We work with organizations on AI workshops
+            and AI tool building, helping teams understand AI clearly and apply it
+            in practical, real-world contexts.
+          </p>
+
+          <div class="hero-badges">
+            <span>AI-enabled organization</span>
+            <span>NSRCEL, IIM Bangalore</span>
+            <span>2026 batch</span>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button button-solid" href="#clients">See organizations</a>
+            <a class="button button-ghost" href="#strengths">See workshop format</a>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal reveal-delay-1">
+          <figure class="hero-image">
+            <img
+              src="https://futurelabstudios.com/photo/workshop%20photos/Pepsico,%20Gurgaon.jpeg"
+              alt="Futurelab workshop at PepsiCo Gurgaon"
+            >
+          </figure>
+
+          <div class="hero-side-card">
+            <p class="eyebrow">What we offer</p>
+            <ul class="hero-list">
+              <li>AI literacy and adoption workshops</li>
+              <li>Department-specific AI deep dives</li>
+              <li>Builder sprints and prototype support</li>
+              <li>Custom AI tool design and development</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Glimpses from our workshops</h2>
+          <p>
+            A visual look at how our workshops are conducted across organizations,
+            teams, and locations.
+          </p>
+        </div>
+
+        <div class="gallery-carousel reveal">
+          <button
+            class="gallery-button gallery-button-prev"
+            id="gallery-prev"
+            type="button"
+            aria-label="Previous workshop photos"
+          >
+            <span aria-hidden="true">&#8249;</span>
+          </button>
+
+          <div
+            class="gallery-viewport"
+            id="workshop-gallery-viewport"
+            tabindex="0"
+            aria-label="Workshop photo carousel"
+          >
+            <div class="gallery-track" id="workshop-gallery"></div>
+          </div>
+
+          <button
+            class="gallery-button gallery-button-next"
+            id="gallery-next"
+            type="button"
+            aria-label="Next workshop photos"
+          >
+            <span aria-hidden="true">&#8250;</span>
+          </button>
+        </div>
+
+        <div class="gallery-dots" id="workshop-gallery-dots" aria-label="Workshop photo carousel pagination"></div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="clients">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Organization we have worked with</h2>
+          <p>
+            This section is intentionally placed early so someone opening the brochure
+            immediately understands the breadth of organizations Futurelab has worked with.
+          </p>
+        </div>
+
+        <div class="logo-grid reveal reveal-delay-1" id="logo-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="strengths">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Areas of Strength</p>
+          <h2>What our workshops typically look like and what they are designed to unlock.</h2>
+          <p>
+            The structure below keeps the offering easy to understand: the workshop
+            formats, the way they are delivered, and the tools or systems we commonly
+            cover or build around.
+          </p>
+        </div>
+
+        <div class="offering-grid">
+          <article class="offering-card reveal">
+            <p class="offering-id">01</p>
+            <h3>AI Workshops</h3>
+            <p>
+              We run hands-on workshops that help teams understand the AI landscape,
+              identify use cases, and start using AI safely and productively in their
+              day-to-day work.
+            </p>
+          </article>
+
+          <article class="offering-card reveal reveal-delay-1">
+            <p class="offering-id">02</p>
+            <h3>AI Tool Building</h3>
+            <p>
+              We also work with organizations to build AI tools, copilots, and workflows
+              that move from training into live implementation.
+            </p>
+          </article>
+        </div>
+
+        <div class="program-grid">
+          <article class="program-card reveal">
+            <p class="program-label">AI Essentials</p>
+            <h3>For all team members</h3>
+            <p class="program-duration">3 sessions • 2 hours each</p>
+            <p>
+              Overview of the AI landscape and latest trends. Outcome: confidence and
+              safe everyday AI use.
+            </p>
+            <ul>
+              <li>Landscape and trends</li>
+              <li>Everyday productivity tool walkthrough</li>
+              <li>Cross-department use cases</li>
+              <li>Responsible AI and data privacy</li>
+            </ul>
+          </article>
+
+          <article class="program-card reveal reveal-delay-1">
+            <p class="program-label">AI Deep Dive</p>
+            <h3>For specific teams</h3>
+            <p class="program-duration">4 sessions • 90 mins each</p>
+            <p>
+              Built for functions like marketing, finance, sales, and operations.
+              Outcome: team-level adoption and efficiency.
+            </p>
+            <ul>
+              <li>Department-specific demos</li>
+              <li>Quick wins for immediate adoption</li>
+              <li>Advanced prompt engineering</li>
+              <li>Guided participant practice</li>
+            </ul>
+          </article>
+
+          <article class="program-card reveal reveal-delay-2">
+            <p class="program-label">AI Builders</p>
+            <h3>For teams ready to build</h3>
+            <p class="program-duration">Workshop + build sprint</p>
+            <p>
+              For teams that want to move from learning into prototypes and working tools.
+            </p>
+            <ul>
+              <li>Hackathon-style sessions</li>
+              <li>Prototype real solutions</li>
+              <li>Automation and API workflows</li>
+              <li>AI safety and security practices</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="strength-grid">
+          <article class="strength-card reveal">
+            <h3>How the workshops feel</h3>
+            <ul class="plain-list">
+              <li>Strategic and practical, not abstract</li>
+              <li>Jargon-free, plain-English learning</li>
+              <li>Tailored to the organization and team context</li>
+              <li>Focused on adoption, not only inspiration</li>
+            </ul>
+          </article>
+
+          <article class="strength-card reveal reveal-delay-1">
+            <h3>Common tools and systems covered</h3>
+            <div class="chip-list" id="tool-chip-list"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="videos">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Workshop Videos</h2>
+        </div>
+
+        <div class="video-grid" id="video-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="facilitators">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Workshop Facilitators</h2>
+        </div>
+
+        <div class="facilitator-grid">
+          <article class="facilitator-card reveal">
+            <img
+              src="https://futurelabstudios.com/images/team/Shabbir%20Haider.jpeg"
+              alt="Shabbir Haider"
+            >
+            <div class="facilitator-copy">
+              <p class="eyebrow">Co-Founder</p>
+              <h3>Shabbir Haider</h3>
+              <p>
+                Shabbir leads Futurelab Studios and brings 13+ years of experience
+                across business strategy and technology transformation.
+              </p>
+              <div class="facilitator-detail-block">
+                <p class="facilitator-detail-title">Organizations Worked At</p>
+                <div class="facilitator-tags">
+                  <span>Amul</span>
+                  <span>Wipro</span>
+                  <span>PepsiCo</span>
+                  <span>Mondelez</span>
+                </div>
+              </div>
+              <div class="facilitator-detail-block">
+                <p class="facilitator-detail-title">Education</p>
+                <div class="facilitator-tags">
+                  <span>Jadavpur University, Kolkata</span>
+                  <span>IRMA, Anand</span>
+                  <span>Network School</span>
+                </div>
+              </div>
+              <a
+                class="facilitator-link"
+                href="https://in.linkedin.com/in/shabbir7"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn Profile
+              </a>
+            </div>
+          </article>
+
+          <article class="facilitator-card reveal reveal-delay-1">
+            <img
+              src="https://futurelabstudios.com/images/team/Kuntal%20Sharma.jpg"
+              alt="Kuntal Sharma"
+            >
+            <div class="facilitator-copy">
+              <p class="eyebrow">Co-Founder</p>
+              <h3>Kuntal Sharma</h3>
+              <p>
+                Kuntal is a marketing and growth leader with 13+ years of experience
+                across growth, brand, and communication roles that support strong
+                AI adoption and workshop facilitation.
+              </p>
+              <div class="facilitator-detail-block">
+                <p class="facilitator-detail-title">Organizations Worked At</p>
+                <div class="facilitator-tags">
+                  <span>Google</span>
+                  <span>Paytm</span>
+                  <span>Airtel</span>
+                  <span>Amul</span>
+                </div>
+              </div>
+              <div class="facilitator-detail-block">
+                <p class="facilitator-detail-title">Education</p>
+                <div class="facilitator-tags">
+                  <span>Lady Shri Ram, Delhi</span>
+                  <span>IRMA, Anand</span>
+                  <span>Network School, Singapore</span>
+                </div>
+              </div>
+              <a
+                class="facilitator-link"
+                href="https://in.linkedin.com/in/kuntal7"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn Profile
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tools">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Tools We Have Built</h2>
+          <p>
+            Futurelab does not only train teams. It also helps build AI tools, with
+            notable work in the social sector alongside enterprise-facing systems.
+          </p>
+        </div>
+
+        <div class="build-grid">
+          <article class="build-card build-card-highlight reveal">
+            <p class="build-tag">Social Sector</p>
+            <h3>SachivG</h3>
+            <p>
+              An AI-powered voice agent built for Sarpanch leaders, designed to support
+              smart and accessible local governance.
+            </p>
+            <span>Piramal Foundation</span>
+          </article>
+
+          <article class="build-card build-card-highlight reveal reveal-delay-1">
+            <p class="build-tag">Social Sector</p>
+            <h3>Sweety Didi</h3>
+            <p>
+              A support and information platform designed to make access more usable,
+              respectful, and practical for underserved communities.
+            </p>
+            <span>Ficus Development Solutions and allied networks</span>
+          </article>
+
+          <article class="build-card build-card-highlight reveal reveal-delay-2">
+            <p class="build-tag">Social Sector</p>
+            <h3>AI Prison OS</h3>
+            <p>
+              An AI-led operating layer intended to support rehabilitation and
+              reintegration-oriented prison systems.
+            </p>
+            <span>Project Second Chance and TCA Foundation</span>
+          </article>
+
+          <article class="build-card reveal">
+            <p class="build-tag">Social Sector</p>
+            <h3>Social Analytics Tools</h3>
+            <p>
+              Platforms for impact tracking, outcome measurement, and better decision-making
+              across development and nonprofit work.
+            </p>
+          </article>
+
+          <article class="build-card reveal reveal-delay-1">
+            <p class="build-tag">Enterprise</p>
+            <h3>Custom RAG Copilots</h3>
+            <p>
+              Internal knowledge tools that make organizational information easier to
+              search, understand, and act on.
+            </p>
+          </article>
+
+          <article class="build-card reveal reveal-delay-2">
+            <p class="build-tag">Enterprise</p>
+            <h3>Field Sales AI Tools</h3>
+            <p>
+              AI tools for reporting, route planning, and faster field-level decision support.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cta">
+      <div class="container cta-card reveal">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Futurelab Studios</h2>
+          <p>
+            For organizations looking to run AI workshops, deepen team capability,
+            or build AI tools around real business and social-impact use cases.
+          </p>
+        </div>
+        <div class="cta-links">
+          <a class="button button-solid" href="mailto:contact@futurelabstudios.com">contact@futurelabstudios.com</a>
+          <a class="button button-ghost" href="https://futurelabstudios.com/" target="_blank" rel="noreferrer">Website</a>
+          <a class="button button-ghost" href="https://www.linkedin.com/company/futurelabstudios" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">Futurelab Studios</p>
+    </div>
+  </footer>
+
+  <script src="app.js?v=20260402f"></script>
+</body>
+</html>
