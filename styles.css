@@ -99,10 +99,10 @@ button {
 }
 
 .brand img {
-  width: 2.8rem;
-  height: 2.8rem;
+  width: 3rem;
+  height: 3rem;
   object-fit: contain;
-  border-radius: 0.8rem;
+  mix-blend-mode: multiply;
 }
 
 .brand span,
@@ -201,7 +201,7 @@ button {
 
 .section-head > p:not(.eyebrow),
 .hero-intro,
-.hero-incubation-copy p:last-child,
+.hero-incubation-text,
 .program-card p:not(.program-label):not(.program-duration),
 .strength-card li,
 .strength-card p,
@@ -241,10 +241,10 @@ button {
 }
 
 .hero-wordmark {
-  width: clamp(5.25rem, 10vw, 7rem);
+  width: clamp(10.5rem, 18vw, 14rem);
   margin-bottom: 1rem;
-  border-radius: 1.25rem;
-  box-shadow: var(--shadow-soft);
+  object-fit: contain;
+  mix-blend-mode: multiply;
 }
 
 .hero-intro {
@@ -333,32 +333,39 @@ button {
 }
 
 .hero-footer {
-  margin-top: 0.6rem;
+  margin-top: 0.9rem;
 }
 
 .hero-incubation {
-  display: inline-flex;
+  display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  align-items: center;
-  padding: 0.8rem 1rem;
-  border-radius: 18px;
+  gap: 1.5rem;
+  padding: 1rem 0 0;
+  border: 0;
+  border-top: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 0;
   box-shadow: none;
-  background: rgba(255, 255, 255, 0.78);
+  background: transparent;
 }
 
-.hero-incubation-copy p:last-child {
+.hero-incubation-text {
   margin: 0;
-  font-size: 0.96rem;
+  font-size: 0.95rem;
+  color: var(--text-soft);
+  letter-spacing: -0.01em;
+}
+
+.hero-incubation-text span {
+  color: var(--text);
+  font-weight: 700;
 }
 
 .hero-incubation img {
-  width: min(12.5rem, 100%);
+  width: min(9.75rem, 100%);
   object-fit: contain;
-  border-radius: 10px;
-  opacity: 0.88;
+  opacity: 0.92;
 }
 
 .workshop-grid {
@@ -755,10 +762,10 @@ button {
 }
 
 .footer-logo {
-  width: 4.25rem;
-  height: 4.25rem;
+  width: 7rem;
+  height: auto;
   object-fit: contain;
-  border-radius: 1rem;
+  mix-blend-mode: multiply;
 }
 
 .footer-title {
@@ -878,6 +885,7 @@ button {
 
   .hero-incubation {
     align-items: flex-start;
+    gap: 0.75rem;
   }
 
   .logo-grid,
