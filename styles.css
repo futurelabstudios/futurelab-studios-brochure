@@ -263,10 +263,6 @@ button {
   gap: 0.75rem;
 }
 
-.hero-badges {
-  margin-top: 1.5rem;
-}
-
 .hero-badges span,
 .program-label,
 .program-duration {
@@ -280,10 +276,6 @@ button {
   font-weight: 800;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-}
-
-.hero-actions {
-  margin-top: 1.75rem;
 }
 
 .button {
@@ -341,26 +333,32 @@ button {
 }
 
 .hero-footer {
-  margin-top: 1.25rem;
+  margin-top: 0.6rem;
 }
 
 .hero-incubation {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 1.25rem;
+  display: inline-flex;
+  width: 100%;
   align-items: center;
-  padding: 1.1rem 1.25rem;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  border-radius: 18px;
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0.78);
 }
 
 .hero-incubation-copy p:last-child {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.96rem;
 }
 
 .hero-incubation img {
-  width: min(19rem, 100%);
-  border-radius: 12px;
+  width: min(12.5rem, 100%);
   object-fit: contain;
+  border-radius: 10px;
+  opacity: 0.88;
 }
 
 .workshop-grid {
@@ -865,6 +863,10 @@ button {
 
   .hero-copy h1 {
     font-size: 2.7rem;
+  }
+
+  .hero-incubation {
+    align-items: flex-start;
   }
 
   .logo-grid,
