@@ -99,9 +99,10 @@ button {
 }
 
 .brand img {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.8rem;
+  height: 2.8rem;
   object-fit: contain;
+  border-radius: 0.8rem;
 }
 
 .brand span,
@@ -109,6 +110,7 @@ button {
 .hero-copy h1,
 .program-card h3,
 .strength-card h3,
+.structure-tools h3,
 .group-head h3,
 .build-card h3,
 .video-meta h3,
@@ -119,6 +121,10 @@ button {
 .brand span {
   font-weight: 700;
   letter-spacing: -0.03em;
+}
+
+.brand-text {
+  display: inline-block;
 }
 
 .site-nav {
@@ -198,6 +204,7 @@ button {
 .hero-incubation-copy p:last-child,
 .program-card p:not(.program-label):not(.program-duration),
 .strength-card li,
+.strength-card p,
 .build-card p,
 .video-meta p,
 .logo-card span,
@@ -231,6 +238,13 @@ button {
   font-style: italic;
   font-weight: 400;
   color: #6b7280;
+}
+
+.hero-wordmark {
+  width: clamp(5.25rem, 10vw, 7rem);
+  margin-bottom: 1rem;
+  border-radius: 1.25rem;
+  box-shadow: var(--shadow-soft);
 }
 
 .hero-intro {
@@ -398,7 +412,8 @@ button {
 }
 
 .video-grid,
-.build-grid {
+.build-grid,
+.testimonial-grid {
   display: grid;
   gap: 1rem;
 }
@@ -455,16 +470,35 @@ button {
   letter-spacing: -0.03em;
 }
 
+.testimonial-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.testimonial-card {
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: var(--shadow-card);
+}
+
+.testimonial-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .logo-groups,
 .tool-columns,
-.structure-grid {
+.unique-grid {
   display: grid;
   gap: 1rem;
 }
 
 .logo-groups,
 .tool-columns,
-.structure-grid {
+.unique-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
@@ -486,17 +520,14 @@ button {
 }
 
 .logo-card {
-  min-height: 8rem;
+  min-height: 7rem;
   padding: 0.9rem;
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   background: rgba(255, 255, 255, 0.98);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.7rem;
-  text-align: center;
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
@@ -505,7 +536,7 @@ button {
 }
 
 .logo-media {
-  height: 3.2rem;
+  height: 3.6rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -516,11 +547,6 @@ button {
   max-height: 100%;
   max-width: 100%;
   object-fit: contain;
-}
-
-.logo-card span {
-  font-size: 0.76rem;
-  line-height: 1.35;
 }
 
 .program-grid {
@@ -583,17 +609,27 @@ button {
 }
 
 .program-duration {
-  margin-top: 0.7rem;
+  margin-top: 0.4rem;
   color: var(--text-soft);
   background: rgba(229, 231, 235, 0.8);
 }
 
 .program-card h3,
 .strength-card h3,
-.build-card h3 {
-  margin: 0.75rem 0 0.45rem;
+.build-card h3,
+.structure-tools h3 {
+  margin: 0 0 0.45rem;
   font-size: 1.35rem;
   letter-spacing: -0.04em;
+}
+
+.program-card strong {
+  color: var(--text);
+}
+
+.program-outcome {
+  margin: 1rem 0 0;
+  font-size: 0.98rem;
 }
 
 .strength-card {
@@ -609,6 +645,11 @@ button {
 .strength-card-tools {
   background: linear-gradient(180deg, #ffffff 0%, #eef3f8 100%);
   border-color: rgba(77, 105, 145, 0.2);
+}
+
+.strength-card-buildout {
+  background: linear-gradient(180deg, #ffffff 0%, #eef7f1 100%);
+  border-color: rgba(66, 123, 89, 0.18);
 }
 
 .program-card ul,
@@ -631,6 +672,15 @@ button {
   border: 1px solid var(--line);
   font-weight: 700;
   font-size: 0.9rem;
+}
+
+.structure-tools {
+  margin-top: 1.15rem;
+  padding: 1.35rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: var(--shadow-card);
 }
 
 .build-grid {
@@ -690,9 +740,10 @@ button {
 }
 
 .footer-logo {
-  width: 3rem;
-  height: 3rem;
+  width: 4.25rem;
+  height: 4.25rem;
   object-fit: contain;
+  border-radius: 1rem;
 }
 
 .footer-title {
@@ -719,6 +770,10 @@ button {
   }
 
   .workshop-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .testimonial-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -763,7 +818,7 @@ button {
   .hero-incubation,
   .logo-groups,
   .tool-columns,
-  .structure-grid,
+  .unique-grid,
   .program-grid,
   .cta-card {
     grid-template-columns: 1fr;
@@ -809,7 +864,17 @@ button {
   .logo-grid,
   .build-grid,
   .video-grid,
-  .workshop-grid {
+  .workshop-grid,
+  .testimonial-grid {
     grid-template-columns: 1fr;
+  }
+
+  .brand img {
+    width: 2.45rem;
+    height: 2.45rem;
+  }
+
+  .brand-text {
+    font-size: 0.95rem;
   }
 }

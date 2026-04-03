@@ -14,16 +14,16 @@
     href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap"
     rel="stylesheet"
   >
-  <link rel="icon" href="https://futurelabstudios.com/images/FLlogo2.png" type="image/png">
-  <link rel="stylesheet" href="styles.css?v=20260403b">
+  <link rel="icon" href="assets/custom/futurelab-logo.png" type="image/png">
+  <link rel="stylesheet" href="styles.css?v=20260403c">
 </head>
 <body>
   <div class="scroll-progress" aria-hidden="true"></div>
 
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Futurelab Studios home">
-      <img src="https://futurelabstudios.com/images/FLlogo2.png" alt="Futurelab Studios logo">
-      <span>Futurelab Studios</span>
+      <img src="assets/custom/futurelab-logo.png" alt="Futurelab Studios logo">
+      <span class="brand-text">Futurelab Studios</span>
     </a>
 
     <button
@@ -41,6 +41,7 @@
       <a href="#workshops">Workshop Photos</a>
       <a href="#videos">Workshop Videos</a>
       <a href="#organizations">Organizations</a>
+      <a href="#testimonials">Testimonials</a>
       <a href="#structure">Workshop Structure</a>
       <a href="#tools">Tools Built</a>
       <a href="#contact">Contact</a>
@@ -51,6 +52,11 @@
     <section class="hero section">
       <div class="container hero-shell">
         <div class="hero-copy">
+          <img
+            class="hero-wordmark"
+            src="assets/custom/futurelab-logo.png"
+            alt="Futurelab Studios"
+          >
           <p class="eyebrow">Futurelab Studios</p>
           <h1>
             AI-forward deployment
@@ -154,82 +160,115 @@
       </div>
     </section>
 
-    <section class="section section-soft" id="structure">
+    <section class="section section-soft" id="testimonials">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Testimonials</p>
+          <h2>What partner teams say after working with Futurelab.</h2>
+          <p>
+            A selection of responses from workshop and deployment engagements
+            across enterprise and social-impact organizations.
+          </p>
+        </div>
+
+        <div class="testimonial-grid" id="testimonial-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="structure">
       <div class="container">
         <div class="section-head">
           <p class="eyebrow">Workshop Structure</p>
-          <h2>How we typically structure AI adoption journeys.</h2>
+          <h2>Our AI enablement offerings.</h2>
           <p>
-            We usually move from understanding and experimentation into team-level
-            adoption and then into tool or workflow deployment.
+            We usually move from broad AI confidence into department-level adoption
+            and then into builder sprints for teams ready to create working tools.
           </p>
         </div>
 
         <div class="program-grid">
           <article class="program-card program-card-foundation">
-            <p class="program-label">01</p>
-            <h3>AI Foundations</h3>
-            <p class="program-duration">For broad team orientation</p>
+            <h3>AI Essentials</h3>
+            <p class="program-duration">3 sessions • 2 hours each</p>
             <p>
-              Introductory sessions that help teams understand the AI landscape,
-              common use cases, responsible adoption, and practical everyday usage.
+              <strong>All team members</strong> — mixed cohorts and leadership
             </p>
             <ul>
-              <li>AI basics and current landscape</li>
-              <li>Responsible and safe usage</li>
-              <li>Live demos across work contexts</li>
-              <li>Prompting and experimentation</li>
+              <li>Overview of the AI landscape and headline trends relevant to your sector</li>
+              <li>Everyday productivity tools with live walkthroughs teams can repeat</li>
+              <li>Cross-department use cases so each function sees concrete relevance</li>
+              <li>Data privacy and responsible AI aligned to how your organization works</li>
+              <li>Knowledge handouts and prompt libraries for sustained use after training</li>
             </ul>
+            <p class="program-outcome"><strong>Outcome</strong> • Confidence and safe, everyday AI use</p>
           </article>
 
           <article class="program-card program-card-deepdive">
-            <p class="program-label">02</p>
-            <h3>Team Deep Dives</h3>
-            <p class="program-duration">For function-specific use cases</p>
+            <h3>AI Deep Dive</h3>
+            <p class="program-duration">4 sessions • 90 minutes each</p>
             <p>
-              Focused workshops for teams like marketing, finance, sales, leadership,
-              education, or program teams with examples that feel immediately relevant.
+              <strong>Specific teams</strong> — marketing, finance, sales, HR,
+              operations, and similar
             </p>
             <ul>
-              <li>Department-specific use cases</li>
-              <li>Role-based workflows</li>
-              <li>Hands-on guided practice</li>
-              <li>Tool selection for the team</li>
+              <li>Department-specific demos and examples tied to real workflows</li>
+              <li>Quick wins for adoption in the next sprint</li>
+              <li>Advanced prompt engineering and workflow design</li>
+              <li>Identifying essential tools per department</li>
+              <li>Guided practice so participants ship one real output during the program</li>
             </ul>
+            <p class="program-outcome"><strong>Outcome</strong> • Team-level adoption and efficiency</p>
           </article>
 
           <article class="program-card program-card-build">
-            <p class="program-label">03</p>
-            <h3>Build and Deployment Sprints</h3>
-            <p class="program-duration">For implementation and prototypes</p>
+            <h3>AI Builders</h3>
+            <p class="program-duration">Enablement workshop + build sprint</p>
             <p>
-              Sessions that move beyond training into actual deployment, prototype
-              creation, internal copilots, automations, and tailored AI tools.
+              <strong>AI-native teams</strong> or teams who have completed
+              Essentials and Deep Dive
             </p>
             <ul>
-              <li>Prototype creation</li>
-              <li>Workflow and automation design</li>
-              <li>Knowledge tool setup</li>
-              <li>Deployment-oriented guidance</li>
+              <li>Hackathon-style sessions with your data and problem statements</li>
+              <li>Prototype real solutions alongside engineers</li>
+              <li>Custom builds for problems that off-the-shelf tools do not solve</li>
+              <li>API integrations and automation where it unlocks scale</li>
+              <li>AI safety and security practices for production-minded rollouts</li>
             </ul>
+            <p class="program-outcome"><strong>Outcome</strong> • Working AI tools and prototypes you can iterate on</p>
           </article>
         </div>
 
-        <div class="structure-grid">
+        <div class="unique-grid">
           <article class="strength-card strength-card-practice">
-            <h3>How the workshops are run</h3>
-            <ul class="plain-list">
-              <li>Practical and adoption-led, not abstract</li>
-              <li>Customized to the organization context</li>
-              <li>Designed for real workflows and real teams</li>
-              <li>Blended with live demos, practice, and discussion</li>
-            </ul>
+            <h3>Designed for real adoption</h3>
+            <p>
+              Not a one-time workshop. Teams work on real use cases,
+              department-specific workflows, and leave with things they can
+              immediately apply.
+            </p>
           </article>
 
           <article class="strength-card strength-card-tools">
-            <h3>Common tools and systems we work with</h3>
-            <div class="chip-list" id="tool-chip-list"></div>
+            <h3>Supported beyond the session</h3>
+            <p>
+              Learning continues after the workshop through community support,
+              optional office hours, and structured follow-on guidance so teams
+              avoid drop-off after initial excitement.
+            </p>
           </article>
+
+          <article class="strength-card strength-card-buildout">
+            <h3>From learning to building</h3>
+            <p>
+              We go beyond education into early-stage execution, helping teams
+              turn promising ideas into working prototypes with our support.
+            </p>
+          </article>
+        </div>
+
+        <div class="structure-tools">
+          <h3>Common tools and systems we work with</h3>
+          <div class="chip-list" id="tool-chip-list"></div>
         </div>
       </div>
     </section>
@@ -287,7 +326,7 @@
     <div class="container footer-inner">
       <img
         class="footer-logo"
-        src="https://futurelabstudios.com/images/FLlogo2.png"
+        src="assets/custom/futurelab-logo.png"
         alt="Futurelab Studios logo"
       >
       <p class="footer-title">Futurelab Ikigai Private Limited</p>
@@ -295,6 +334,6 @@
     </div>
   </footer>
 
-  <script src="app.js?v=20260403b"></script>
+  <script src="app.js?v=20260403c"></script>
 </body>
 </html>

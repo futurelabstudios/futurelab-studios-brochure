@@ -24,7 +24,6 @@ const socialLogos = [
   { name: "Catalyst Management Services", path: "/photo/Logo/Catalyst Management Services.jpeg" },
   { name: "Piramal Foundation", path: "/photo/Logo/piramal.png" },
   { name: "Access Development Services", path: "/images/client logos/Access Development Services.jpeg" },
-  { name: "ACH Management Services", path: "/images/client logos/ACH Management Services.jpeg" },
   { name: "AISECT", path: "/images/client logos/AISECT.jpeg" },
   { name: "Development Management Institute", path: "/images/client logos/Development Management Institute.jpg" },
   { name: "Dhwani RIS", path: "/images/client logos/Dhwani RIS.jpeg" },
@@ -182,12 +181,22 @@ const socialTools = [
   }
 ];
 
+const testimonials = [
+  { name: "ITC Testimonial", path: "Testimonials/ITC Testimonial.png" },
+  { name: "PepsiCo Testimonial", path: "Testimonials/Pepsico Testimonial.png" },
+  { name: "Xiaomi Testimonial", path: "Testimonials/Xiaomi Testimonial.png" },
+  { name: "Quantum Testimonial", path: "Testimonials/Quantum Testimonial.png" },
+  { name: "LoveInStore Testimonial", path: "Testimonials/Aditya Testimonial.png" },
+  { name: "Piramal Foundation Testimonial", path: "Testimonials/Manmohan Singh Testimonial.png" }
+];
+
 const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
 const progressBar = document.querySelector(".scroll-progress");
 
 const toAssetUrl = (path) => {
-  if (path.startsWith("http") || path.startsWith("assets/")) return path;
+  if (path.startsWith("http")) return path;
+  if (!path.startsWith("/")) return encodeURI(path);
   return encodeURI(siteBase + path);
 };
 
@@ -202,8 +211,22 @@ const renderLogoSection = (selector, items) => {
           <div class="logo-media">
             <img src="${toAssetUrl(logo.path)}" alt="${logo.name} logo">
           </div>
-          <span>${logo.name}</span>
         </article>
+      `
+    )
+    .join("");
+};
+
+const renderTestimonials = () => {
+  const container = document.querySelector("#testimonial-grid");
+  if (!container) return;
+
+  container.innerHTML = testimonials
+    .map(
+      (item) => `
+        <figure class="testimonial-card">
+          <img src="${toAssetUrl(item.path)}" alt="${item.name}">
+        </figure>
       `
     )
     .join("");
@@ -319,6 +342,7 @@ const initProgress = () => {
 
 renderLogoSection("#enterprise-logo-grid", enterpriseLogos);
 renderLogoSection("#social-logo-grid", socialLogos);
+renderTestimonials();
 renderWorkshopGallery();
 renderVideos();
 renderToolChips();
