@@ -145,8 +145,7 @@ const commonTools = [
   "Knowledge Chatbots",
   "Voice Agents",
   "Automation Workflows",
-  "Internal AI Assistants",
-  "AI Productivity Systems"
+  "Internal AI Assistants"
 ];
 
 const enterpriseTools = [
