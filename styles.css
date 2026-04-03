@@ -375,7 +375,7 @@ button {
   inset: 2.8rem 1.8rem 2.6rem 3.6rem;
   border-radius: 2.5rem;
   background:
-    linear-gradient(155deg, rgba(16, 18, 24, 0.98) 0%, rgba(45, 49, 58, 0.96) 100%);
+    linear-gradient(155deg, rgba(40, 46, 58, 0.96) 0%, rgba(69, 76, 91, 0.94) 100%);
   box-shadow:
     0 36px 80px rgba(10, 12, 16, 0.26),
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
@@ -389,7 +389,77 @@ button {
   border-radius: 2rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.01));
+    radial-gradient(circle at 24% 18%, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0) 28%),
+    radial-gradient(circle at 84% 78%, rgba(130, 183, 255, 0.12), rgba(130, 183, 255, 0) 24%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
+}
+
+.hero-backdrop {
+  position: absolute;
+  inset: 1.6rem 1.1rem 1.5rem 2rem;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-backdrop-card {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 1.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background:
+    linear-gradient(180deg, rgba(20, 24, 34, 0.04), rgba(20, 24, 34, 0.28)),
+    var(--hero-backdrop-image) center / cover no-repeat;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  opacity: 0.52;
+  filter: saturate(0.98) contrast(1.04);
+}
+
+.hero-backdrop-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(18, 22, 30, 0.02), rgba(18, 22, 30, 0.3));
+}
+
+.hero-backdrop-one {
+  top: 1.2rem;
+  left: 1.4rem;
+  width: 26%;
+  height: 26%;
+  transform: rotate(-7deg);
+}
+
+.hero-backdrop-two {
+  top: 1rem;
+  right: 8.5rem;
+  width: 26%;
+  height: 22%;
+  transform: rotate(8deg);
+}
+
+.hero-backdrop-three {
+  top: 34%;
+  right: 1.25rem;
+  width: 21%;
+  height: 20%;
+  transform: rotate(-6deg);
+}
+
+.hero-backdrop-four {
+  left: 6%;
+  bottom: 16%;
+  width: 24%;
+  height: 20%;
+  transform: rotate(7deg);
+}
+
+.hero-backdrop-five {
+  left: 39%;
+  bottom: 1.2rem;
+  width: 27%;
+  height: 18%;
+  transform: rotate(-3deg);
 }
 
 .hero-card {
@@ -432,7 +502,7 @@ button {
 .hero-card-main {
   position: absolute;
   inset: 4.2rem 8.6rem 3.6rem 0.5rem;
-  z-index: 3;
+  z-index: 4;
   transform: rotate(-3.5deg) translateZ(0);
 }
 
@@ -442,7 +512,7 @@ button {
   right: 0;
   width: 34%;
   height: 34%;
-  z-index: 5;
+  z-index: 6;
   animation-delay: 0.8s;
   transform: rotate(6.5deg) translateZ(0);
 }
@@ -453,7 +523,7 @@ button {
   bottom: 1rem;
   width: 35%;
   height: 34%;
-  z-index: 4;
+  z-index: 5;
   animation-delay: 1.6s;
   transform: rotate(4.2deg) translateZ(0);
 }
@@ -464,7 +534,7 @@ button {
   right: 8rem;
   bottom: 0;
   height: 28%;
-  z-index: 2;
+  z-index: 3;
   animation-delay: 2.2s;
   transform: rotate(2.5deg) translateZ(0);
 }
@@ -1148,6 +1218,18 @@ button {
     inset: 2.5rem 1.8rem 2.2rem 2.8rem;
   }
 
+  .hero-backdrop {
+    inset: 1.5rem 1rem 1.35rem 1.7rem;
+  }
+
+  .hero-backdrop-two {
+    right: 6rem;
+  }
+
+  .hero-backdrop-three {
+    width: 22%;
+  }
+
   .hero-card-main {
     inset: 3.5rem 6.6rem 3.1rem 0.2rem;
   }
@@ -1271,6 +1353,50 @@ button {
   .hero-stage-panel {
     inset: 2rem 1rem 1.85rem 1.4rem;
     border-radius: 2rem;
+  }
+
+  .hero-backdrop {
+    inset: 1.05rem 0.7rem 1rem 1rem;
+  }
+
+  .hero-backdrop-card {
+    border-radius: 1rem;
+    opacity: 0.28;
+  }
+
+  .hero-backdrop-one {
+    top: 1rem;
+    left: 0.7rem;
+    width: 29%;
+    height: 22%;
+  }
+
+  .hero-backdrop-two {
+    top: 0.8rem;
+    right: 3.1rem;
+    width: 29%;
+    height: 20%;
+  }
+
+  .hero-backdrop-three {
+    top: 39%;
+    right: 0.25rem;
+    width: 24%;
+    height: 16%;
+  }
+
+  .hero-backdrop-four {
+    left: 3%;
+    bottom: 17%;
+    width: 26%;
+    height: 16%;
+  }
+
+  .hero-backdrop-five {
+    left: 35%;
+    bottom: 0.9rem;
+    width: 25%;
+    height: 14%;
   }
 
   .hero-card {
