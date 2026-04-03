@@ -685,9 +685,13 @@ button {
 
 .build-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
 }
 
 .build-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: transform 0.2s ease;
   overflow: hidden;
 }
@@ -709,6 +713,11 @@ button {
   object-fit: var(--tool-image-fit, cover);
   object-position: var(--tool-image-position, center);
   background: #ffffff;
+}
+
+.build-card p {
+  margin: 0;
+  flex: 1;
 }
 
 .section-cta {
