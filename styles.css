@@ -564,6 +564,17 @@ button {
   margin-top: 0.4rem;
 }
 
+.structure-subhead {
+  margin: 0.25rem 0 1rem;
+}
+
+.structure-subhead h3 {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.45rem, 2vw, 1.8rem);
+  letter-spacing: -0.04em;
+}
+
 .program-card,
 .strength-card,
 .build-card,
@@ -657,6 +668,10 @@ button {
 
 .strength-card-buildout {
   border-color: rgba(66, 123, 89, 0.16);
+}
+
+.strength-card-community {
+  border-color: rgba(102, 102, 102, 0.16);
 }
 
 .program-card ul,
