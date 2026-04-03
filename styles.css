@@ -240,13 +240,6 @@ button {
   color: #6b7280;
 }
 
-.hero-wordmark {
-  width: clamp(10.5rem, 18vw, 14rem);
-  margin-bottom: 1rem;
-  object-fit: contain;
-  mix-blend-mode: multiply;
-}
-
 .hero-intro {
   margin: 1.35rem 0 0;
   font-size: 1.08rem;
@@ -936,11 +929,6 @@ button {
 
   .hero-shell {
     gap: 0.95rem;
-  }
-
-  .hero-wordmark {
-    width: min(11rem, 56vw);
-    margin-bottom: 0.7rem;
   }
 
   .hero-intro {
