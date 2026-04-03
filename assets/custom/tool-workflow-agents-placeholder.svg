@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 1200" role="img" aria-labelledby="title desc">
+  <title id="title">AI workflow agents example interface</title>
+  <desc id="desc">Illustrated dashboard with process automation lanes and task cards.</desc>
+  <rect width="960" height="1200" fill="#f7f7f9"/>
+  <rect x="54" y="54" width="852" height="1092" rx="44" fill="#ffffff" stroke="#d8dde6"/>
+  <rect x="96" y="96" width="768" height="90" rx="28" fill="#101827"/>
+  <text x="136" y="152" fill="#ffffff" font-family="Manrope, Arial, sans-serif" font-size="38" font-weight="800">Workflow Agents</text>
+  <g fill="#f3f4f6">
+    <rect x="96" y="236" width="226" height="828" rx="28"/>
+    <rect x="366" y="236" width="226" height="828" rx="28"/>
+    <rect x="636" y="236" width="228" height="828" rx="28"/>
+  </g>
+  <g fill="#111827" font-family="Manrope, Arial, sans-serif" font-size="28" font-weight="700">
+    <text x="128" y="288">Incoming</text>
+    <text x="402" y="288">In Progress</text>
+    <text x="668" y="288">Completed</text>
+  </g>
+  <g>
+    <rect x="128" y="332" width="162" height="134" rx="24" fill="#fff7ed" stroke="#fed7aa"/>
+    <rect x="128" y="490" width="162" height="170" rx="24" fill="#eef2ff" stroke="#c7d2fe"/>
+    <rect x="128" y="684" width="162" height="126" rx="24" fill="#ecfeff" stroke="#a5f3fc"/>
+    <rect x="398" y="332" width="162" height="210" rx="24" fill="#f0fdf4" stroke="#bbf7d0"/>
+    <rect x="398" y="566" width="162" height="170" rx="24" fill="#fff1f2" stroke="#fecdd3"/>
+    <rect x="668" y="332" width="164" height="148" rx="24" fill="#eff6ff" stroke="#bfdbfe"/>
+    <rect x="668" y="504" width="164" height="180" rx="24" fill="#f5f3ff" stroke="#ddd6fe"/>
+  </g>
+  <g fill="#4b5563" font-family="Manrope, Arial, sans-serif" font-size="22">
+    <text x="148" y="380">Lead capture</text>
+    <text x="148" y="538">Invoice review</text>
+    <text x="148" y="730">Follow-up queue</text>
+    <text x="418" y="380">Agent validating</text>
+    <text x="418" y="614">Calling for update</text>
+    <text x="688" y="380">Resolved handoff</text>
+    <text x="688" y="552">CRM sync complete</text>
+  </g>
+  <path d="M290 405h86c44 0 44 86 88 86h102" fill="none" stroke="#94a3b8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M560 640h64c46 0 46-86 90-86h68" fill="none" stroke="#94a3b8" stroke-width="10" stroke-linecap="round"/>
+</svg>

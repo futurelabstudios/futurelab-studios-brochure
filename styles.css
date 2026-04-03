@@ -689,20 +689,26 @@ button {
 
 .build-card {
   transition: transform 0.2s ease;
+  overflow: hidden;
 }
 
 .build-media {
   margin: -1.4rem -1.4rem 1rem;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4 / 5;
   overflow: hidden;
-  background: linear-gradient(135deg, #f3f4f6, #eceff3);
+  background: linear-gradient(135deg, #f8fafc, #eef2f7);
   border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .build-media img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: var(--tool-image-fit, cover);
+  object-position: var(--tool-image-position, center);
+  background: #ffffff;
 }
 
 .section-cta {

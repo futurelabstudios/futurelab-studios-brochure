@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 1200" role="img" aria-labelledby="title desc">
+  <title id="title">AI Prison OS example interface</title>
+  <desc id="desc">Illustrated operations dashboard with rehabilitation and case overview modules.</desc>
+  <rect width="960" height="1200" fill="#f4f6fb"/>
+  <rect x="56" y="56" width="848" height="1088" rx="42" fill="#ffffff" stroke="#d9e0ea"/>
+  <rect x="100" y="100" width="760" height="120" rx="32" fill="#0f172a"/>
+  <text x="142" y="174" fill="#ffffff" font-family="Manrope, Arial, sans-serif" font-size="42" font-weight="800">AI Prison OS</text>
+  <rect x="100" y="266" width="346" height="260" rx="28" fill="#f8fafc" stroke="#e2e8f0"/>
+  <rect x="480" y="266" width="380" height="260" rx="28" fill="#f8fafc" stroke="#e2e8f0"/>
+  <rect x="100" y="562" width="760" height="540" rx="28" fill="#fbfdff" stroke="#dbe5f4"/>
+  <text x="132" y="332" fill="#111827" font-family="Manrope, Arial, sans-serif" font-size="30" font-weight="700">Case Overview</text>
+  <g fill="#dbeafe">
+    <rect x="132" y="366" width="128" height="120" rx="24"/>
+    <rect x="276" y="366" width="128" height="120" rx="24"/>
+  </g>
+  <g fill="#2563eb" font-family="Manrope, Arial, sans-serif" font-size="42" font-weight="800">
+    <text x="168" y="436">48</text>
+    <text x="310" y="436">12</text>
+  </g>
+  <g fill="#4b5563" font-family="Manrope, Arial, sans-serif" font-size="22">
+    <text x="148" y="474">Active cases</text>
+    <text x="286" y="474">Escalations</text>
+  </g>
+  <text x="512" y="332" fill="#111827" font-family="Manrope, Arial, sans-serif" font-size="30" font-weight="700">Rehabilitation Tracker</text>
+  <g stroke="#cbd5e1" stroke-width="12" stroke-linecap="round">
+    <line x1="520" y1="394" x2="820" y2="394"/>
+    <line x1="520" y1="446" x2="770" y2="446"/>
+  </g>
+  <g fill="#10b981">
+    <circle cx="568" cy="394" r="18"/>
+    <circle cx="654" cy="394" r="18"/>
+    <circle cx="740" cy="394" r="18"/>
+  </g>
+  <text x="132" y="626" fill="#111827" font-family="Manrope, Arial, sans-serif" font-size="34" font-weight="800">Program modules</text>
+  <g fill="#ffffff" stroke="#dbe5f4">
+    <rect x="132" y="666" width="328" height="150" rx="24"/>
+    <rect x="500" y="666" width="328" height="150" rx="24"/>
+    <rect x="132" y="844" width="328" height="150" rx="24"/>
+    <rect x="500" y="844" width="328" height="150" rx="24"/>
+  </g>
+  <g fill="#4b5563" font-family="Manrope, Arial, sans-serif" font-size="24">
+    <text x="164" y="734">Schedules and attendance</text>
+    <text x="532" y="734">Counselling interventions</text>
+    <text x="164" y="912">Documentation and compliance</text>
+    <text x="532" y="912">Outcome tracking and review</text>
+  </g>
+</svg>

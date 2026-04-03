@@ -146,38 +146,62 @@ const commonTools = [
 const enterpriseTools = [
   {
     title: "Athena",
-    description: "AI knowledge and productivity support for enterprise teams working across internal documents, workflows, and decision support."
+    description: "AI knowledge and productivity support for enterprise teams working across internal documents, workflows, and decision support.",
+    image: "assets/custom/tool-athena.jpeg",
+    imageFit: "contain",
+    imagePosition: "center top"
   },
   {
-    title: "Sail CZ",
-    description: "Workflow-oriented AI build for enterprise coordination, structured task movement, and operational follow-through."
+    title: "SalesEasy",
+    description: "An AI-powered sales companion designed for market intelligence, guided selling, and faster field decision support.",
+    image: "assets/custom/tool-saleseasy.jpeg",
+    imageFit: "contain",
+    imagePosition: "center top"
   },
   {
     title: "Custom RAG Copilots",
-    description: "Internal knowledge assistants for enterprise teams working across policies, reports, training materials, and operational documents."
+    description: "Internal knowledge assistants for enterprise teams working across policies, reports, training materials, and operational documents.",
+    image: "assets/custom/tool-rag-copilot-placeholder.svg",
+    imageFit: "cover",
+    imagePosition: "center"
   },
   {
     title: "AI Voice and Workflow Agents",
-    description: "Operational agents and automations that help teams streamline repetitive internal processes."
+    description: "Operational agents and automations that help teams streamline repetitive internal processes.",
+    image: "assets/custom/tool-workflow-agents-placeholder.svg",
+    imageFit: "cover",
+    imagePosition: "center"
   }
 ];
 
 const socialTools = [
   {
     title: "Sachiv Ji",
-    description: "A voice-led governance support tool designed to help local leaders access practical information faster."
+    description: "A voice-led governance support tool designed to help local leaders access practical information faster.",
+    image: "assets/custom/tool-sachiv-ji.jpeg",
+    imageFit: "contain",
+    imagePosition: "center top"
   },
   {
     title: "Sweety Didi",
-    description: "A support and information platform built to make practical access and guidance more usable for underserved communities."
+    description: "A support and information platform built to make practical access and guidance more usable for underserved communities.",
+    image: "assets/custom/tool-sweety-didi.jpeg",
+    imageFit: "contain",
+    imagePosition: "center top"
   },
   {
     title: "AI Prison OS",
-    description: "An AI-led operating layer intended to support rehabilitation and reintegration-oriented prison systems."
+    description: "An AI-led operating layer intended to support rehabilitation and reintegration-oriented prison systems.",
+    image: "assets/custom/tool-ai-prison-os-placeholder.svg",
+    imageFit: "cover",
+    imagePosition: "center"
   },
   {
     title: "Social Analytics Tools",
-    description: "Impact-tracking and decision-support tools for organizations working in development, learning, and social change."
+    description: "Impact-tracking and decision-support tools for organizations working in development, learning, and social change.",
+    image: "assets/custom/tool-social-analytics-placeholder.svg",
+    imageFit: "cover",
+    imagePosition: "center"
   }
 ];
 
@@ -289,13 +313,21 @@ const renderBuildCards = (selector, items) => {
 
   container.innerHTML = items
     .map(
-      (item) => `
+      (item) => {
+        const mediaStyle = [
+          item.imageFit ? `--tool-image-fit:${item.imageFit}` : "",
+          item.imagePosition ? `--tool-image-position:${item.imagePosition}` : ""
+        ]
+          .filter(Boolean)
+          .join(";");
+
+        return `
         <article class="build-card">
           ${
             item.image
               ? `
                 <div class="build-media">
-                  <img src="${toAssetUrl(item.image)}" alt="${item.title}">
+                  <img src="${toAssetUrl(item.image)}" alt="${item.title}"${mediaStyle ? ` style="${mediaStyle}"` : ""}>
                 </div>
               `
               : ""
@@ -303,7 +335,8 @@ const renderBuildCards = (selector, items) => {
           <h3>${item.title}</h3>
           <p>${item.description}</p>
         </article>
-      `
+      `;
+      }
     )
     .join("");
 };

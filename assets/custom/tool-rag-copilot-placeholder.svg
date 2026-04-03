@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Custom RAG Copilot example interface</title>
+  <desc id="desc">Illustrated interface showing a retrieval assistant with knowledge search and cited answers.</desc>
+  <rect width="960" height="1200" fill="#f5f7fb"/>
+  <rect x="54" y="54" width="852" height="1092" rx="44" fill="#ffffff" stroke="#d8dee8"/>
+  <rect x="106" y="106" width="748" height="78" rx="22" fill="#f2f5f9" stroke="#e0e6ef"/>
+  <circle cx="144" cy="145" r="16" fill="#2f6fed"/>
+  <rect x="178" y="128" width="232" height="34" rx="12" fill="#d8e4ff"/>
+  <rect x="442" y="128" width="286" height="34" rx="12" fill="#eef2f7"/>
+  <rect x="106" y="224" width="272" height="860" rx="28" fill="#f8fafc" stroke="#e7ecf2"/>
+  <rect x="410" y="224" width="444" height="516" rx="28" fill="#fbfdff" stroke="#e7ecf2"/>
+  <rect x="410" y="770" width="444" height="314" rx="28" fill="#f7fbff" stroke="#dce7f8"/>
+  <text x="136" y="292" fill="#0f172a" font-family="Manrope, Arial, sans-serif" font-size="34" font-weight="700">Knowledge Sources</text>
+  <g fill="#e9eff7">
+    <rect x="136" y="340" width="212" height="120" rx="20"/>
+    <rect x="136" y="484" width="212" height="120" rx="20"/>
+    <rect x="136" y="628" width="212" height="120" rx="20"/>
+    <rect x="136" y="772" width="212" height="120" rx="20"/>
+  </g>
+  <g fill="#6b7280" font-family="Manrope, Arial, sans-serif" font-size="26">
+    <text x="158" y="408">Policies</text>
+    <text x="158" y="552">Playbooks</text>
+    <text x="158" y="696">Reports</text>
+    <text x="158" y="840">FAQs</text>
+  </g>
+  <text x="446" y="300" fill="#0f172a" font-family="Manrope, Arial, sans-serif" font-size="42" font-weight="800">Ask the Copilot</text>
+  <rect x="446" y="336" width="372" height="74" rx="22" fill="#eff4ff" stroke="#d5e2ff"/>
+  <text x="474" y="382" fill="#3159c9" font-family="Manrope, Arial, sans-serif" font-size="26">How do I onboard a new partner organization?</text>
+  <rect x="446" y="444" width="372" height="236" rx="24" fill="#0f172a"/>
+  <text x="478" y="496" fill="#ffffff" font-family="Manrope, Arial, sans-serif" font-size="30" font-weight="700">Answer with citations</text>
+  <g fill="#cbd5e1" font-family="Manrope, Arial, sans-serif" font-size="24">
+    <text x="478" y="548">1. Review onboarding checklist and</text>
+    <text x="478" y="584">required documents.</text>
+    <text x="478" y="638">2. Share policy kit and support links.</text>
+  </g>
+  <rect x="478" y="690" width="124" height="32" rx="12" fill="#3159c9"/>
+  <rect x="618" y="690" width="160" height="32" rx="12" fill="#1d4ed8" opacity=".55"/>
+  <text x="446" y="828" fill="#0f172a" font-family="Manrope, Arial, sans-serif" font-size="38" font-weight="800">Recent prompts</text>
+  <g fill="#ffffff" stroke="#d8e3f0">
+    <rect x="446" y="862" width="372" height="72" rx="20"/>
+    <rect x="446" y="952" width="372" height="72" rx="20"/>
+  </g>
+  <g fill="#4b5563" font-family="Manrope, Arial, sans-serif" font-size="24">
+    <text x="474" y="907">Summarize last quarter field insights</text>
+    <text x="474" y="997">What changed in our reimbursement rules?</text>
+  </g>
+</svg>
