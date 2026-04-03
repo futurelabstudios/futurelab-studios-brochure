@@ -470,34 +470,33 @@ button {
 
 .testimonial-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
 }
 
 .testimonial-card {
   margin: 0;
-  overflow: hidden;
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--line);
+  padding: 0.75rem;
+  border-radius: 0;
+  border: 1px solid rgba(17, 17, 17, 0.08);
   background: rgba(255, 255, 255, 0.98);
-  box-shadow: var(--shadow-card);
+  box-shadow: 0 12px 28px rgba(17, 17, 17, 0.06);
 }
 
 .testimonial-card img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  background: #ffffff;
 }
 
 .logo-groups,
 .tool-columns,
 .unique-grid {
   display: grid;
-  gap: 1rem;
-}
-
-.logo-groups,
-.tool-columns,
-.unique-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
 }
 
 .logo-group,
@@ -550,56 +549,61 @@ button {
 .program-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.15rem;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.unique-grid {
+  margin-top: 0.4rem;
 }
 
 .program-card,
 .strength-card,
 .build-card,
 .cta-card {
-  padding: 1.4rem;
+  padding: 1.55rem;
 }
 
 .program-card {
   position: relative;
-  border-width: 1.5px;
-  box-shadow: 0 20px 44px rgba(17, 17, 17, 0.08);
+  padding-top: 1.8rem;
+  border-width: 1px;
+  box-shadow: var(--shadow-card);
+  background: rgba(255, 255, 255, 0.98);
 }
 
 .program-card::before {
   content: "";
-  display: block;
-  width: 4rem;
-  height: 0.26rem;
-  margin-bottom: 1rem;
-  border-radius: 999px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0.28rem;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
 }
 
 .program-card-foundation {
-  background: linear-gradient(180deg, #fffdfa 0%, #f6f1e7 100%);
-  border-color: rgba(164, 125, 55, 0.22);
+  border-color: rgba(164, 125, 55, 0.18);
 }
 
 .program-card-foundation::before {
-  background: #a47d37;
+  background: linear-gradient(90deg, #8d6b33, #d7c39a);
 }
 
 .program-card-deepdive {
-  background: linear-gradient(180deg, #fbfdff 0%, #eef4fb 100%);
-  border-color: rgba(72, 108, 166, 0.2);
+  border-color: rgba(72, 108, 166, 0.18);
 }
 
 .program-card-deepdive::before {
-  background: #4f72a7;
+  background: linear-gradient(90deg, #4f72a7, #b9c9e2);
 }
 
 .program-card-build {
-  background: linear-gradient(180deg, #fbfffc 0%, #edf7f0 100%);
-  border-color: rgba(53, 119, 83, 0.2);
+  border-color: rgba(53, 119, 83, 0.18);
 }
 
 .program-card-build::before {
-  background: #357753;
+  background: linear-gradient(90deg, #357753, #b8d9c2);
 }
 
 .program-label {
@@ -631,23 +635,21 @@ button {
 }
 
 .strength-card {
-  border-width: 1.5px;
-  box-shadow: 0 20px 44px rgba(17, 17, 17, 0.07);
+  border-width: 1px;
+  box-shadow: var(--shadow-card);
+  background: rgba(255, 255, 255, 0.98);
 }
 
 .strength-card-practice {
-  background: linear-gradient(180deg, #ffffff 0%, #f7f3ee 100%);
-  border-color: rgba(166, 129, 70, 0.2);
+  border-color: rgba(166, 129, 70, 0.16);
 }
 
 .strength-card-tools {
-  background: linear-gradient(180deg, #ffffff 0%, #eef3f8 100%);
-  border-color: rgba(77, 105, 145, 0.2);
+  border-color: rgba(77, 105, 145, 0.16);
 }
 
 .strength-card-buildout {
-  background: linear-gradient(180deg, #ffffff 0%, #eef7f1 100%);
-  border-color: rgba(66, 123, 89, 0.18);
+  border-color: rgba(66, 123, 89, 0.16);
 }
 
 .program-card ul,
@@ -673,8 +675,8 @@ button {
 }
 
 .structure-tools {
-  margin-top: 1.15rem;
-  padding: 1.35rem;
+  margin-top: 1.5rem;
+  padding: 1.55rem;
   border-radius: var(--radius-lg);
   border: 1px solid rgba(17, 17, 17, 0.08);
   background: rgba(255, 255, 255, 0.98);

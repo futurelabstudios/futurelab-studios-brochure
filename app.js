@@ -130,7 +130,13 @@ const videos = [
 
 const commonTools = [
   "ChatGPT",
-  "Claude",
+  "Claude Cowork",
+  "OpenAI Codex",
+  "Microsoft Copilot",
+  "Genspark",
+  "Replit",
+  "Cursor",
+  "n8n",
   "Canva AI",
   "Notion AI",
   "DALL·E",
