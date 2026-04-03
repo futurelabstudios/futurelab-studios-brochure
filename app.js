@@ -1,24 +1,28 @@
 const siteBase = "https://futurelabstudios.com";
 
 const enterpriseLogos = [
+  { name: "ITC", path: "assets/custom/itc-logo.png" },
+  { name: "PepsiCo", path: "/photo/Logo/Pepsico.png" },
+  { name: "Xiaomi", path: "assets/custom/xiaomi-logo.png" },
+  { name: "Sony TV", path: "/photo/Logo/Sony TV.jpeg" },
   { name: "Adda247", path: "/images/client logos/Adda247.jpeg" },
-  { name: "Catalyst Management Services", path: "/photo/Logo/Catalyst Management Services.jpeg" },
   { name: "Culver Max Entertainment", path: "/images/client logos/Culver Max Entertainment.jpeg" },
   { name: "India Alternatives", path: "/photo/Logo/India Alternatives.jpeg" },
   { name: "International Money Matters", path: "/images/client logos/International Money Matters.jpeg" },
   { name: "Laqshya Media Group", path: "/photo/Logo/Laqshya Media Group.jpeg" },
   { name: "Love in Store", path: "/photo/Logo/LIS-LOGO-HQ-01.svg" },
-  { name: "PepsiCo", path: "/photo/Logo/Pepsico.png" },
   { name: "Playmoolah", path: "/photo/Logo/Playmoolah.jpeg" },
   { name: "Quantum Consumer Solutions", path: "/photo/Logo/Quantum Consumer Solutions.jpeg" },
   { name: "SBI", path: "/photo/Logo/SBI.svg" },
-  { name: "Sony TV", path: "/photo/Logo/Sony TV.jpeg" },
   { name: "Syngenta", path: "/photo/Logo/syngenta.svg" },
   { name: "Thermo Procus", path: "/photo/Logo/thermo_procus.png" },
   { name: "Value", path: "/photo/Logo/Value-logo.png" }
 ];
 
 const socialLogos = [
+  { name: "Khan Academy", path: "assets/custom/khan-academy-logo.png" },
+  { name: "Catalyst Management Services", path: "/photo/Logo/Catalyst Management Services.jpeg" },
+  { name: "Piramal Foundation", path: "/photo/Logo/piramal.png" },
   { name: "Access Development Services", path: "/images/client logos/Access Development Services.jpeg" },
   { name: "ACH Management Services", path: "/images/client logos/ACH Management Services.jpeg" },
   { name: "AISECT", path: "/images/client logos/AISECT.jpeg" },
@@ -30,7 +34,6 @@ const socialLogos = [
   { name: "Kaivalya Education Foundation", path: "/photo/Logo/Kaivalya Education Limited.jpeg" },
   { name: "Parivaar Mission", path: "/images/client logos/Parivaar Mission.jpeg" },
   { name: "Phicus Development Solutions", path: "/images/client logos/Phicus Development Solutions.jpeg" },
-  { name: "Piramal Foundation", path: "/photo/Logo/piramal.png" },
   { name: "Samaritan Help Mission", path: "/images/client logos/Samaritan Help Mission.jpeg" },
   { name: "Swami Sivananda Memorial Institute", path: "/images/client logos/Swami Sivananda Memorial Institute.png" },
   { name: "Swasti", path: "/photo/Logo/Swasti.png" }
@@ -40,42 +43,56 @@ const workshopPhotos = [
   {
     path: "assets/custom/patna-workshop.jpeg",
     caption: "AI Enablement Workshop for State, Division and District Officials",
-    location: "Patna"
+    location: "Patna",
+    description: "Large-format AI enablement workshop for public-sector leadership teams."
   },
   {
     path: "/photo/workshop photos/Pepsico, Gurgaon.jpeg",
     caption: "PepsiCo Leadership",
-    location: "Gurgaon"
+    location: "Gurgaon",
+    description: "Leadership-focused AI session on adoption, productivity, and use-case mapping."
+  },
+  {
+    path: "/photo/workshop photos/Pepsico Finance, Gurgaon.jpeg",
+    caption: "PepsiCo Finance",
+    location: "Gurgaon",
+    description: "Hands-on workshop tailored for finance workflows, reporting, and decision support."
   },
   {
     path: "/photo/workshop photos/Catalyst Management Services, Bengaluru.jpeg",
     caption: "Catalyst Management Services",
-    location: "Bengaluru"
+    location: "Bengaluru",
+    description: "AI adoption workshop centered on team readiness and practical project use cases."
   },
   {
     path: "/photo/workshop photos/International Money Matters, Bengaluru.jpg",
     caption: "International Money Matters",
-    location: "Bengaluru"
+    location: "Bengaluru",
+    description: "Practical AI session on communication, planning, and internal productivity workflows."
   },
   {
     path: "/photo/workshop photos/Culver Max Entertainment Pvt Ltd.jpeg",
     caption: "Culver Max Entertainment",
-    location: "Mumbai"
+    location: "Mumbai",
+    description: "Workshop built for creative and operational teams in fast-moving media environments."
   },
   {
     path: "/photo/workshop photos/India Alternatives, Mumbai.jpeg",
     caption: "India Alternatives",
-    location: "Mumbai"
+    location: "Mumbai",
+    description: "Focused exploration of AI for research, analysis, and internal knowledge workflows."
   },
   {
     path: "/photo/workshop photos/Samaritan Mission, Kolkata.jpeg",
     caption: "Samaritan Mission",
-    location: "Kolkata"
+    location: "Kolkata",
+    description: "Mission-led workshop on using AI in program implementation and learning systems."
   },
   {
     path: "/photo/workshop photos/Techno India Kolkata.jpeg",
     caption: "Techno India University",
-    location: "Kolkata"
+    location: "Kolkata",
+    description: "Academic AI workshop combining literacy, live demos, and hands-on experimentation."
   }
 ];
 
@@ -129,16 +146,16 @@ const commonTools = [
 
 const enterpriseTools = [
   {
+    title: "Athena",
+    description: "AI knowledge and productivity support for enterprise teams working across internal documents, workflows, and decision support."
+  },
+  {
+    title: "Sail CZ",
+    description: "Workflow-oriented AI build for enterprise coordination, structured task movement, and operational follow-through."
+  },
+  {
     title: "Custom RAG Copilots",
     description: "Internal knowledge assistants for enterprise teams working across policies, reports, training materials, and operational documents."
-  },
-  {
-    title: "Knowledge Chatbots",
-    description: "Domain-specific assistants that make organizational information searchable, conversational, and more usable."
-  },
-  {
-    title: "Field Sales AI Tools",
-    description: "Tools for reporting, planning, follow-ups, and faster field-level decision support."
   },
   {
     title: "AI Voice and Workflow Agents",
@@ -148,8 +165,8 @@ const enterpriseTools = [
 
 const socialTools = [
   {
-    title: "SachivG",
-    description: "An AI-powered voice agent designed to support Sarpanch leaders and improve access to governance-related information."
+    title: "Sachiv Ji",
+    description: "A voice-led governance support tool designed to help local leaders access practical information faster."
   },
   {
     title: "Sweety Didi",
@@ -174,16 +191,6 @@ const toAssetUrl = (path) => {
   return encodeURI(siteBase + path);
 };
 
-const chunkItems = (items, size) => {
-  const chunks = [];
-
-  for (let index = 0; index < items.length; index += size) {
-    chunks.push(items.slice(index, index + size));
-  }
-
-  return chunks;
-};
-
 const renderLogoSection = (selector, items) => {
   const container = document.querySelector(selector);
   if (!container) return;
@@ -206,80 +213,20 @@ const renderWorkshopGallery = () => {
   const container = document.querySelector("#workshop-gallery");
   if (!container) return;
 
-  container.innerHTML = chunkItems(workshopPhotos, 2)
+  container.innerHTML = workshopPhotos
     .map(
-      (slide) => `
-        <div class="gallery-slide">
-          ${slide
-            .map(
-              (photo) => `
-                <figure class="gallery-card">
-                  <img src="${toAssetUrl(photo.path)}" alt="${photo.caption}">
-                  <figcaption>
-                    <strong>${photo.caption}</strong>
-                    <span>${photo.location}</span>
-                  </figcaption>
-                </figure>
-              `
-            )
-            .join("")}
-        </div>
+      (photo) => `
+        <figure class="workshop-card">
+          <img src="${toAssetUrl(photo.path)}" alt="${photo.caption}">
+          <figcaption class="workshop-card-body">
+            <strong>${photo.caption}</strong>
+            <p>${photo.description}</p>
+            <span>${photo.location}</span>
+          </figcaption>
+        </figure>
       `
     )
     .join("");
-};
-
-const initWorkshopCarousel = () => {
-  const track = document.querySelector("#workshop-gallery");
-  const prevButton = document.querySelector("#gallery-prev");
-  const nextButton = document.querySelector("#gallery-next");
-  const dots = document.querySelector("#workshop-gallery-dots");
-
-  if (!track || !prevButton || !nextButton || !dots) return;
-
-  const slides = Array.from(track.querySelectorAll(".gallery-slide"));
-  const totalSlides = slides.length;
-  let currentIndex = 0;
-
-  const updateControls = () => {
-    dots.querySelectorAll(".gallery-dot").forEach((dot, index) => {
-      const isActive = index === currentIndex;
-      dot.classList.toggle("is-active", isActive);
-      dot.setAttribute("aria-pressed", String(isActive));
-    });
-
-    prevButton.disabled = totalSlides <= 1;
-    nextButton.disabled = totalSlides <= 1;
-  };
-
-  const setPage = (pageIndex) => {
-    if (!totalSlides) return;
-    currentIndex = (pageIndex + totalSlides) % totalSlides;
-    track.style.transform = `translateX(-${currentIndex * 100}%)`;
-    updateControls();
-  };
-
-  dots.innerHTML = slides
-    .map(
-      (_slide, index) => `
-        <button
-          class="gallery-dot${index === 0 ? " is-active" : ""}"
-          type="button"
-          aria-label="Go to workshop slide ${index + 1}"
-          aria-pressed="${index === 0}"
-        ></button>
-      `
-    )
-    .join("");
-
-  dots.querySelectorAll(".gallery-dot").forEach((dot, index) => {
-    dot.addEventListener("click", () => setPage(index));
-  });
-
-  prevButton.addEventListener("click", () => setPage(currentIndex - 1));
-  nextButton.addEventListener("click", () => setPage(currentIndex + 1));
-
-  setPage(0);
 };
 
 const renderVideos = () => {
@@ -321,6 +268,15 @@ const renderBuildCards = (selector, items) => {
     .map(
       (item) => `
         <article class="build-card">
+          ${
+            item.image
+              ? `
+                <div class="build-media">
+                  <img src="${toAssetUrl(item.image)}" alt="${item.title}">
+                </div>
+              `
+              : ""
+          }
           <h3>${item.title}</h3>
           <p>${item.description}</p>
         </article>
@@ -364,7 +320,6 @@ const initProgress = () => {
 renderLogoSection("#enterprise-logo-grid", enterpriseLogos);
 renderLogoSection("#social-logo-grid", socialLogos);
 renderWorkshopGallery();
-initWorkshopCarousel();
 renderVideos();
 renderToolChips();
 renderBuildCards("#enterprise-tools-grid", enterpriseTools);
